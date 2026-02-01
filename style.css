@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: #0d0d0d; /* dark neon background */
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Playwrite IN Guides', cursive;
+    font-size: 48px;
+    color: #39ff14; /* neon green */
+    text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    background: transparent;
+    color: #00ffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.container button:hover {
+    background: #00ffff;
+    color: #0d0d0d;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+.container img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    transition: 0.3s;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+.battle {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.choice h2 {
+    margin-bottom: 10px;
+    color: #ff00ff; /* neon pink */
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.choice img {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+.result {
+    margin-bottom: 20px;
+}
+
+#result-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+#score-text {
+    font-size: 20px;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.reset-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    background: transparent;
+    color: #ff0000;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}.reset-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    background: transparent;
+    color: #ff0000;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+.reset-btn:hover {
+    background: #ff0000;
+    color: #0d0d0d;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+#result-text.animate {
+    animation: pop 0.3s ease;
+}

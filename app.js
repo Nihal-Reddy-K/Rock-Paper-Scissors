@@ -1,4 +1,4 @@
-let btns = document.querySelectorAll('button');
+let btns = document.querySelectorAll('button[data-choice]');
 const playerImg = document.querySelector('.player-img');
 const computerImg = document.querySelector('.computer-img');
 const resultText = document.querySelector('#result-text');
@@ -47,17 +47,16 @@ function playRound(humanChoice, computerChoice){
       computerScore++;
       resultText.textContent=`You lost! You chose ${humanChoice} and Computer chose ${computerChoice}`;
     }
+    scoreText.textContent = `Player: ${humanScore} and Computer: ${computerScore}`;
+
+    if(humanScore === 5){
+    resultText.textContent = "You win! :D";
+    disableButtons();
+    }else if(computerScore === 5){
+    resultText.textContent = "You lose! D:";
+    disableButtons();
   }
-
-scoreText.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
-
-if(humanScore == 5){
-  resultText.textContent = "You win! :D";
-  disableButtons();
-}else if(computerScore == 5){
-  resultText.textContent = "You lose! D:";
-  disableButtons();
-}
+  }
 
 function resetDaGame(){
 humanScore = 0;

@@ -6,6 +6,42 @@
     <title>Rock-Paper-Scissors! :D</title>
 </head>
 <body>
+    <h1>Rock Paper Scissors!</h1>
+    <div class="container">
+
+    <div class="rock">
+        <img src="images/rock.png" alt="rock">
+        <button data-choice="rock">ROCK</button>
+    </div>
+
+    <div class="paper">
+        <img src="images/paper.png" alt="paper">
+        <button data-choice="paper">PAPER</button>
+    </div>
+
+    <div class="scissors">
+        <img src="images/scissors.png" alt="scissors">
+        <button data-choice="scissors">SCISSORS</button>
+    </div>
+    </div>
+
+    <div class="battle">
+
+        <div class="choice">
+            <h2>Your choice:</h2>
+            <img class="player-img" src="images/question.jpg" alt="Player choice">
+        </div>
+
+        <div class="choice">
+            <h2>Computer's Choice:</h2>
+            <img class="computer-img" src="images/question.jpg" alt="Computer's choice">
+        </div>
+    </div>
+
+    <div class="result">
+        <p id="result-text">Make your move!</p>
+        <p id="score-text">Player: 0 | Computer: 0</p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
